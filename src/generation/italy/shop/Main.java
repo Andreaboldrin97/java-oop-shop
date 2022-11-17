@@ -30,10 +30,10 @@ public class Main {
 		System.out.println("---------------------------");
 		
 		//stampiamo il prezzo
-		System.out.println("il prezzo del prodoot senza iva  è di " + prodotto1.getPrice() + " euro");
+		System.out.println("il prezzo del prodotto senza iva  è di " + prodotto1.getPrice() + " euro");
 		
 		//stampiamo il prezzo finale conpreso d'iva
-		System.out.println("il prezzo del prodoot con iva  è di " + prodotto1.getTotalPrice() + " euro");
+		System.out.println("il prezzo del prodotto con iva  è di " + prodotto1.getTotalPrice() + " euro");
 		
 				
 	}
