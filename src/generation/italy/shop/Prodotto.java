@@ -20,4 +20,38 @@ Nello stesso package aggiungere una classe Main con metodo main che verra' utili
 
 public class Prodotto {
 
+	// assegnazione attributi del prodotto
+	int codice;
+	String nome;
+	String descrizione;
+	int prezzo;
+	final int IVA = 20;
+	
+	//creazione del costruttore
+	public Prodotto(String nome, String descrizione, int prezzo) {
+		
+		// assegnamento dei dati del costruttore
+		this.nome = nome;
+		this.descrizione = descrizione;
+		this.prezzo = prezzo;
+	}
+	
+	// metodo per ottenere la stampa del prezzo
+	public int getPrice() {
+		return prezzo;
+	}
+	
+	// metodo che restituisce il prezzo più l'iva
+	public int getTotalPrice() {
+		return prezzo - ( prezzo * IVA / 20);
+	}
+	
+	//metodo toString per la visualizzazione dell'istanza
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "prodotto : " + nome 
+				+ "\nDescrizione :" + descrizione
+				+ "\nPrezzo senza iva : " + prezzo;
+	}
 }
