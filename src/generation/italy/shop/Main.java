@@ -22,6 +22,20 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		// creo l'istanza dell'oggeto nel main
+		Prodotto prodotto1 = new Prodotto("MacBook Air","Il miglio pc del mondo ",1000);
+		
+		//stampio gli elementi dell'istanza creata
+		System.out.println(prodotto1);
+		System.out.println("---------------------------");
+		
+		//stampiamo il prezzo
+		System.out.println("il prezzo del prodoot senza iva  è di " + prodotto1.getPrice() + " euro");
+		
+		//stampiamo il prezzo finale conpreso d'iva
+		System.out.println("il prezzo del prodoot con iva  è di " + prodotto1.getTotalPrice() + " euro");
+		
+				
 	}
 	
 }
