@@ -26,7 +26,7 @@ public class Prodotto {
 	Random rand = new Random();
 	
 	// assegnazione attributi del prodotto
-	int codice = rand.nextInt(10000) + 10000;
+	int codice; 
 	String nome;
 	String descrizione;
 	int prezzo;
@@ -39,6 +39,7 @@ public class Prodotto {
 		this.nome = nome;
 		this.descrizione = descrizione;
 		this.prezzo = prezzo;
+		this.codice = rand.nextInt(10000) + 10000;
 	}
 	
 	// metodo per ottenere la stampa del prezzo
