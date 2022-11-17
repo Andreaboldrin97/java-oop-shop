@@ -1,5 +1,7 @@
 package generation.italy.shop;
 
+import java.util.Random;
+
 /*
  * Todo:
 Nel solito package generation.italy.shop creare classe Prodotto che rappresenta un singolo prodotto all'interno di un negozio. Il prodotto e' caratterizzato dalle seguenti informazioni:
@@ -19,9 +21,12 @@ Nello stesso package aggiungere una classe Main con metodo main che verra' utili
  */
 
 public class Prodotto {
-
+	
+	//chiamiamo la classe per generare un numero random
+	Random rand = new Random();
+	
 	// assegnazione attributi del prodotto
-	int codice;
+	int codice = rand.nextInt(10000) + 10000;
 	String nome;
 	String descrizione;
 	int prezzo;
@@ -51,7 +56,8 @@ public class Prodotto {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "prodotto : " + nome 
-				+ "\nDescrizione :" + descrizione
+				+"\nCodice prodotto : " + codice
+				+ "\nDescrizione : " + descrizione
 				+ "\nPrezzo senza iva : " + prezzo;
 	}
 }
